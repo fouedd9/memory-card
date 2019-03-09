@@ -1,5 +1,4 @@
-# momory-card
+# memory-card
 
 
-[try me]: https://fouedd9.github.io/memory-card/
-
+[try me](http://bit.ly/2Usohja)
