@@ -2,143 +2,213 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Game In instagram</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
-    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Permanent+Marker">
-    <link rel="stylesheet" type="text/css" media="screen" href="index.css">
+        <meta charset="utf-8">
+        <title>Game In instagram</title>
+        <meta name="description" content="If you have memory or concentration problems this game is right for you!!!">
+        <meta name="keywords"
+                content="Memory card, concentration, match card, game en ligne, education game, quiz game" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet prefetch"
+                href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+        <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+        <link rel="stylesheet prefetch"
+                href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Permanent+Marker">
+        <link rel="stylesheet" type="text/css" media="screen" href="index.css">
+        <link rel="stylesheet" type="text/css" href="animate.css">
 </head>
 
 <body>
+        <div class="container">
+                <header>
+                        <a class="logo" target="_blank" href="https://resume.io/r/IDZz7aQlK">
+                                <img class="logo-img" src="./images/logo.png" width="126" height="126"
+                                        ALT="mon_cv_en_ligne" ALIGN=CENTER>
+                        </a>
 
-    <div class="container">
-        <header>
-            <h1>Daily Dose</h1>
-        </header>
+                        <h1>Daily Dose</h1>
+                </header>
 
-        <section class="score-panel">
-            <ul class="stars">
-                <li><i class="fa fa-star"></i></li>
-                <li><i class="fa fa-star"></i></li>
-                <li><i class="fa fa-star"></i></li>
-            </ul>
+                <section class="score-panel">
+                        <ul class="stars">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                        </ul>
 
-            <span class="moves">0</span> Move
+                        <span class="moves">0</span> Move
 
-            <div class="timer">
-            </div>
+                        <div class="timer">
+                        </div>
 
-            <div class="restart" onclick=startGame()>
-                <i class="fa fa-repeat"></i>
-            </div>
-        </section>
+                        <div class="restart" onclick=startGame()>
+                                <i class="fa fa-repeat"></i>
+                        </div>
+                </section>
 
-        <ul id="card-deck" class="deck">
-            <li class="card" type="browser">
-                <img class="img_picture" src="./images/browser.svg" height="100" width="100"
-                    title="browser" alt="browser">
-            </li>
-            <li class="card" type="chrome">
-                    <img class="img_picture" src="./images/chrome.svg" height="100" width="100"
-                    title="chrome" alt="chrome">
-            </li>
-            <li class="card" type="firefox">
-                    <img class="img_picture" src="./images/firefox.svg" height="100" width="100"
-                    title="firefox" alt="firefox">
-            </li>
-            <li class="card" type="globe">
-                    <img class="img_picture" src="./images/globe.svg" height="100" width="100"
-                    title="globe" alt="globe">
-            </li>
-            <li class="card" type="tor">
-                    <img class="img_picture" src="./images/tor.svg" height="100" width="100"
-                    title="tor" alt="tor">
-            </li>
-            <li class="card" type="opera">
-                    <img class="img_picture" src="./images/opera.svg" height="100" width="100"
-                    title="opera" alt="opera">
-            </li>
-            <li class="card" type="safari">
-                    <img class="img_picture" src="./images/safari.svg" height="100" width="100"
-                    title="safari" alt="safari">
-            </li>
-            <li class="card" type="safari2">
-                    <img class="img_picture" src="./images/safari2.svg" height="100" width="100"
-                    title="safari2" alt="safari2">
-            </li>
-            <li class="card" type="share">
-                    <img class="img_picture" src="./images/share.svg" height="100" width="100"
-                    title="share" alt="share">
-            </li>
-            <li class="card" type="ie">
-                    <img class="img_picture" src="./images/ie.svg" height="100" width="100"
-                    title="ie" alt="ie">
-            </li>
-            <li class="card" type="browser">
-                    <img class="img_picture" src="./images/browser.svg" height="100" width="100"
-                        title="browser" alt="browser">
-                </li>
-                <li class="card" type="chrome">
-                        <img class="img_picture" src="./images/chrome.svg" height="100" width="100"
-                        title="chrome" alt="chrome">
-                </li>
-                <li class="card" type="firefox">
-                        <img class="img_picture" src="./images/firefox.svg" height="100" width="100"
-                        title="firefox" alt="firefox">
-                </li>
-                <li class="card" type="globe">
-                        <img class="img_picture" src="./images/globe.svg" height="100" width="100"
-                        title="globe" alt="globe">
-                </li>
-                <li class="card" type="tor">
-                        <img class="img_picture" src="./images/tor.svg" height="100" width="100"
-                        title="tor" alt="tor">
-                </li>
-                <li class="card" type="opera">
-                        <img class="img_picture" src="./images/opera.svg" height="100" width="100"
-                        title="opera" alt="opera">
-                </li>
-                <li class="card" type="safari">
-                        <img class="img_picture" src="./images/safari.svg" height="100" width="100"
-                        title="safari" alt="safari">
-                </li>
-                <li class="card" type="safari2">
-                        <img class="img_picture" src="./images/safari2.svg" height="100" width="100"
-                        title="safari2" alt="safari2">
-                </li>
-                <li class="card" type="share">
-                        <img class="img_picture" src="./images/share.svg" height="100" width="100"
-                        title="share" alt="share">
-                </li>
-                <li class="card" type="ie">
-                        <img class="img_picture" src="./images/ie.svg" height="100" width="100"
-                        title="ie" alt="ie">
-                </li>
-        </ul>
+                <ul id="card-deck" class="deck">
+                        <li class="card" type="browser">
+                                <img class="img_picture" src="./images/browser.svg" height="50" width="50"
+                                        title="browser" alt="browser">
+                        </li>
+                        <li class="card" type="chrome">
+                                <img class="img_picture" src="./images/chrome.svg" height="50" width="50" title="chrome"
+                                        alt="chrome">
+                        </li>
+                        <li class="card" type="firefox">
+                                <img class="img_picture" src="./images/firefox.svg" height="50" width="50"
+                                        title="firefox" alt="firefox">
+                        </li>
+                        <li class="card" type="globe">
+                                <img class="img_picture" src="./images/globe.svg" height="50" width="50" title="globe"
+                                        alt="globe">
+                        </li>
+                        <li class="card" type="tor">
+                                <img class="img_picture" src="./images/tor.svg" height="50" width="50" title="tor"
+                                        alt="tor">
+                        </li>
+                        <li class="card" type="opera">
+                                <img class="img_picture" src="./images/opera.svg" height="50" width="50" title="opera"
+                                        alt="opera">
+                        </li>
+                        <li class="card" type="safari">
+                                <img class="img_picture" src="./images/safari.svg" height="50" width="50" title="safari"
+                                        alt="safari">
+                        </li>
+                        <li class="card" type="safari2">
+                                <img class="img_picture" src="./images/safari2.svg" height="50" width="50"
+                                        title="safari2" alt="safari2">
+                        </li>
+                        <li class="card" type="share">
+                                <img class="img_picture" src="./images/share.svg" height="50" width="50" title="share"
+                                        alt="share">
+                        </li>
+                        <li class="card" type="ie">
+                                <img class="img_picture" src="./images/ie.svg" height="50" width="50" title="ie"
+                                        alt="ie">
+                        </li>
+                        <li class="card" type="browser">
+                                <img class="img_picture" src="./images/browser.svg" height="50" width="50"
+                                        title="browser" alt="browser">
+                        </li>
+                        <li class="card" type="chrome">
+                                <img class="img_picture" src="./images/chrome.svg" height="50" width="50" title="chrome"
+                                        alt="chrome">
+                        </li>
+                        <li class="card" type="firefox">
+                                <img class="img_picture" src="./images/firefox.svg" height="50" width="50"
+                                        title="firefox" alt="firefox">
+                        </li>
+                        <li class="card" type="globe">
+                                <img class="img_picture" src="./images/globe.svg" height="50" width="50" title="globe"
+                                        alt="globe">
+                        </li>
+                        <li class="card" type="tor">
+                                <img class="img_picture" src="./images/tor.svg" height="50" width="50" title="tor"
+                                        alt="tor">
+                        </li>
+                        <li class="card" type="opera">
+                                <img class="img_picture" src="./images/opera.svg" height="50" width="50" title="opera"
+                                        alt="opera">
+                        </li>
+                        <li class="card" type="safari">
+                                <img class="img_picture" src="./images/safari.svg" height="50" width="50" title="safari"
+                                        alt="safari">
+                        </li>
+                        <li class="card" type="safari2">
+                                <img class="img_picture" src="./images/safari2.svg" height="50" width="50"
+                                        title="safari2" alt="safari2">
+                        </li>
+                        <li class="card" type="share">
+                                <img class="img_picture" src="./images/share.svg" height="50" width="50" title="share"
+                                        alt="share">
+                        </li>
+                        <li class="card" type="ie">
+                                <img class="img_picture" src="./images/ie.svg" height="50" width="50" title="ie"
+                                        alt="ie">
+                        </li>
+                </ul>
+                <h1 class="animated fadeInUp delay-3s"> Follow me </h1>
+                <div id="RS">
 
-        <div id="popup1" class="overlay">
-            <div class="popup">
-                <h2>Congratulations 🎉</h2>
-                <a class="close" href=#>×</a>
-                <div class="content-1">
-                    Congratulations you're a winner 🎉🎉
+                        <ul>
+                                <i>
+                                        <a target="_blank" href="https://www.facebook.com/foued.saidane">
+                                                <span>
+                                                        <img class="swing" src="./images/facebook-logo.png"
+                                                                alt="facebook" />
+                                                </span> </a>
+                                </i>
+                                <i>
+                                        <a target="_bank" href="https://www.instagram.com/foued.saidane/">
+                                                <span>
+                                                        <img class="swing" src="./images/Instagram_icon.png"
+                                                                alt="instagram" />
+                                                </span> </a>
+                                </i>
+
+                                <i>
+                                        <a target="_blank" href="https://twitter.com/saidanefoued">
+                                                <span>
+                                                        <img class="swing" id="tweety" src="./images/logo twitter.png"
+                                                                alt="Twitter"/>
+                                                </span> </a>
+                                </i>
+
+                                <i>
+                                        <a target="_blank" href="https://www.linkedin.com/in/foued-saidane/">
+                                                <span class="swing">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70"
+                                                                viewBox="0 0 24 24">
+                                                                <path
+                                                                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                                        </svg>
+                                                </span> </a>
+                                </i>
+                        </ul>
                 </div>
-                <div class="content-2">
-                    <p>You made <span id=finalMove> </span> moves </p>
-                    <p>in <span id=totalTime> </span> </p>
-                    <p>Rating: <span id=starRating></span></p>
+
+
+                <div class="bg-div">
+                        <a target="_blank" href="https://resume.io/r/IDZz7aQlK">
+                                <img class="logo-img" src="./images/logo.png" width="126" height="126"
+                                        ALT="mon_cv_en_ligne" ALIGN=CENTER></a>
+
+
+
                 </div>
-                <button id="play-again" onclick="playAgain()">
-                    Play again 😄</a>
-                </button>
-            </div>
+                <div id="popup1" class="overlay">
+                        <div class="popup">
+                                <h2>Congratulations 🎉</h2>
+                                <a class="close" href=#>×</a>
+                                <div class="content-1">Congratulations you're a winner 🎉🎉</div>
+                                <div class="content-2">
+                                        <p>You made <span id=finalMove> </span> moves</p>
+
+                                        <p>in <span id=totalTime> </span> </p>
+                                        <p>Rating: <span id=starRating></span></p>
+                                </div>
+                                <button id="play-again" onclick="playAgain()">Play again 😄</button>
+                        </div>
+                </div>
+
         </div>
 
-    </div>
-    <script src="app.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="app.js"></script>
 </body>
 
 </html>

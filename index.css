@@ -17,36 +17,78 @@ body {
 }
 
 body {
-    background: #833ab4;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	font-family: 'Permanent Marker', cursive , ;
 	font-size: 16px;
 }
+nav{
+    float: center;
+    margin: 0;
+    overflow:hidden;
+    text-align: center;
+}
 
+nav ul{
+    margin-top: 49px;
+    padding: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav > ul > li > a{
+	
+    float: right;
+    display: block;
+    line-height: 2em;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+.logo-img{
+    float: left;
+    position: relative;
+    margin: 10px 15px 15px 10px;
+}
+.bg-div{
+   overflow: hidden;
+}
 .container {
+	margin-top: 0px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 }
+.header {
+	float: left;
+	width: 100px;
+	height: 100px;
+	background: #555;
+  }
+
+.logo {
+	padding: 8px 4px;
+	position: absolute;
+  left: 0px;
+}
+	
+
+
 
 h1 {
     font-family: sans-serif ;
-  
 }
-
-
-
 /*
  * Styles for the deck of cards
  */
 
 
 .deck {
+
 	width: 85%;
-	background: #DAE2F8;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #D6A4A4, #DAE2F8);  /* Chrome 10-25, Safari 5.1-6 */
+    
 background: linear-gradient(to bottom, #D6A4A4, #DAE2F8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 	padding: 1rem;
@@ -59,24 +101,37 @@ background: linear-gradient(to bottom, #D6A4A4, #DAE2F8); /* W3C, IE 10+/ Edge, 
 	margin: 0 0 3em;
 }
 
+
+
 .deck .card {
 	height: 3.7rem;
 	width: 3.7rem;
 	margin: 0.2rem 0.2rem;
-	background: #141214;;
+	background: #141214;
+	-webkit-transition: opacity 1s ease-in-out;
+       -moz-transition: opacity 1s ease-in-out;
+        -ms-transition: opacity 1s ease-in-out;
+         -o-transition: opacity 1s ease-in-out;
+            transition: opacity 1s ease-in-out;
 	font-size: 0;
 	color: #ffffff;
-	border-radius: 5px;
+	border-radius: 25px;
 	cursor: pointer;
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
 	box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
 }
+.deck .card:hover {
+    zoom: 1;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+
+}
 
 .deck .card.open {
 	transform: rotateY(0);
-	background: #02b3e4;
+background: linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9); 
 	cursor: default;
 	animation-name: flipInY;
 	-webkit-backface-visibility: visible !important;
@@ -90,20 +145,23 @@ background: linear-gradient(to bottom, #D6A4A4, #DAE2F8); /* W3C, IE 10+/ Edge, 
 
 .deck .card.match {
 	cursor: default;
-	background: #E5F720;
+background: linear-gradient(to bottom, #24FE41, #FDFC47); 
 	font-size: 33px;
+	animation-name: pulse;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	animation-duration: .5s;
+}
+
+.deck .card.unmatched {
 	animation-name: rubberBand;
 	-webkit-backface-visibility: visible !important;
 	backface-visibility: visible !important;
 	animation-duration: .75s;
-}
+	background: #FF416C;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-.deck .card.unmatched {
-	animation-name: pulse;
-	-webkit-backface-visibility: visible !important;
-	backface-visibility: visible !important;
-	animation-duration: .75s;
-	background: #e2043b;
 }
 
 .deck .card.disabled {
@@ -174,7 +232,7 @@ background: linear-gradient(to bottom, #D6A4A4, #DAE2F8); /* W3C, IE 10+/ Edge, 
 .popup {
 	margin: 70px auto;
 	padding: 20px;
-	background: #ffffff;
+background: linear-gradient(to top, #799F0C, #FFE000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	border-radius: 5px;
 	width: 85%;
 	position: relative;
@@ -341,3 +399,43 @@ background: linear-gradient(to bottom, #D6A4A4, #DAE2F8); /* W3C, IE 10+/ Edge, 
 		width: 60%;
 	}
 }
+.h2 {
+	font-family: 'Times New Roman', Times, serif ;
+	
+		height: 100%;
+		width: 100%;
+		display: flex;
+		position: fixed;
+		align-items: center;
+		justify-content: center;	  
+}
+
+
+
+
+
+#tweety {
+	border-radius: 10%;
+}
+.swing {
+	-webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+	animation-delay: 3s;
+	width: 70px;
+	height: 70px;
+	display: inline-block;
+	margin-right: 50px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+	flex-direction: column;
+	
+	
+}
+
+  .h1{
+	font-family: 'Candal', sans-serif !important;
+
+  }
